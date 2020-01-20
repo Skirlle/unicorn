@@ -1,0 +1,40 @@
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro_Regular/MyriadPro-Regular.woff2') format('woff2');
+    src: url('../fonts/MyriadPro_Regular/MyriadPro-Regular.woff') format('woff');
+    src: url('../fonts/MyriadPro_Regular/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham_Bold/Gotham_Bold.woff2') format('woff2');
+    src: url('../fonts/Gotham_Bold/Gotham_Bold.woff') format('woff');
+    src: url('../fonts/Gotham_Bold/Gotham_Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham_Medium/GothamMedium.woff2') format('woff2');
+    src: url('../fonts/Gotham_Medium/GothamMedium.woff') format('woff');
+    src: url('../fonts/Gotham_Medium/GothamMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham_Book/Gotham-Book.woff2') format('woff2');
+    src: url('../fonts/Gotham_Book/Gotham-Book.woff') format('woff');
+    src: url('../fonts/Gotham_Book/Gotham-Book.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans_Regular/OpenSansRegular.woff2') format('woff2');
+    src: url('../fonts/OpenSans_Regular/OpenSansRegular.woff') format('woff');
+    src: url('../fonts/OpenSans_Regular/OpenSansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

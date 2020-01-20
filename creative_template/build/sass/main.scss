@@ -1,0 +1,400 @@
+$sea_blue: #11749e;
+
+body{
+    font-family: 'Gotham';
+    color: #fff;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.main-wrap{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.text{
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Gotham Book';
+}
+.title{
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.dark{
+    color: #222;
+}
+.menu-humb{
+    display: none;
+}
+
+
+
+
+.promo{
+    height: 880px;  
+    background: url(../img/header-background.jpg) no-repeat fixed;
+    background-size: cover;
+    .main-header{
+        border-bottom: 1px solid rgba(123,123,123,.5);
+        &__container{
+            height: 115px;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            margin-right: auto;
+        }
+        &__link{
+            font-size: 20px;
+            font-family: 'Myriad pro';
+            padding: 40px 25px;
+        }
+        &__link:hover{
+            border-bottom: 6px solid $sea_blue;
+        }
+    }
+    .socials{
+        padding-left: 15px;
+        &__link{
+            padding: 15px;
+        }
+        &__link:hover{
+            color: $sea_blue;
+        }
+    }
+    &__content{
+        margin-top: 270px;
+        text-align: center;
+    }
+    &__title{
+        font-family: 'Gotham';
+        font-weight: 600;
+        font-size: 153px;
+        letter-spacing: -8px;
+        color: #f5f5f5;
+        text-transform: uppercase;
+    }
+    &__subtitle{
+        padding-top: 35px;
+        font-family: 'Gotham';
+        font-weight: 500;
+        font-size: 25px;
+        letter-spacing: 19px;
+        text-transform: uppercase;
+        color: $sea_blue;
+    }       
+}
+.scroll{
+    margin-top: 115px;
+    &__label{
+        display: block;
+        font-size: 13px;
+        font-family: 'Open Sans';
+    }
+    &__down{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 25px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+    &__down:hover{
+        color: $sea_blue;
+        border-color: $sea_blue;
+    }
+}
+.about{
+    background: $sea_blue url(../img/W.png) no-repeat center 100px;
+    &__container{
+        padding-top: 160px;
+        padding-bottom: 130px;
+        text-align: center;
+    }
+    &__row{
+        padding-top: 140px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__col{
+        text-align: center;
+        margin-right: 40px;
+        flex: 0 1 25%;
+    }
+    &__col:last-child{
+        margin-right: 0;
+    }
+    &__item-icon{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item-title{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-family: 'Gotham';
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+}
+.news{
+    &__container{
+        display: flex;
+    }
+    &__promo-text{
+        flex: 0 1 50%;
+        max-width: 50%;
+    }
+    &__left-text{
+        background-color: #222;
+        padding: 80px 110px 0 210px;
+        color: #fff;
+    }
+    &__right-text{
+        background-color: #f3f3f3;
+        padding: 110px 250px 0 80px;
+        color: #222;
+        order: 2;
+    }
+    &__promo-image{
+        flex: 0 0 50%;
+        max-width: 50%;
+        img{
+            max-width: 100%;
+        }
+    }
+    &__date{
+        font-family: 'Gotham Book';
+        font-size: 13px;
+    }
+    &__theme{
+        font-family: 'Gotham Book';
+        font-size: 13px;
+    }
+    &__title{
+        padding-top: 20px;
+        font-family: 'Gotham';
+        font-weight: 500;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    &__text{
+        padding-top: 30px;
+    }
+   
+}
+.blog{
+    background: url(../img/B.png) no-repeat center 100px;
+    &__container{
+        padding-top: 160px;
+        padding-bottom: 130px;
+        text-align: center;
+        color: black;
+    }
+    &__subtitle{
+        padding-top: 115px;
+        font-family: 'Gotham Book';
+        font-size: 30px;
+    }
+    &__row{
+        margin-top: 75px;
+        display: flex;
+    }
+    &__item{
+        margin-left: 15px;
+    }
+    &__item-title{
+        padding-top: 40px;
+        font-family: 'Gotham';
+        font-weight: 500;
+        font-size: 18px;
+        color: $sea_blue;
+    }
+    &__item-text{
+        padding: 25px 10px 0 10px;
+    }
+}
+.quick{
+    padding-top: 110px;
+    padding-bottom: 150px;
+    background-color: $sea_blue;
+    &__container{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+    }
+    &__item:first-child{
+        margin-right: 100px;
+    }
+    &__item-text{
+        padding-left: 35px;
+    }
+}
+.key{
+    background: url('../img/key-background.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        flex: 0 1 465px;
+        padding-top: 225px;
+    }
+    &__content-title{
+        font-family: 'Gotham';
+        font-weight: 500;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    &__content-text{
+        padding-top: 40px;
+    }
+    &__advantages{
+        margin-top: 30px;
+    }
+    &__advantages-item{
+        background-color: $sea_blue;
+        margin-top: 20px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: 'Gotham';
+        font-weight: 500;
+    }
+    &__advantages-item:nth-child(1){
+        width: 60%
+    }
+    &__advantages-item:nth-child(2){
+        width: 70%;
+    }
+    &__advantages-item:nth-child(3){
+        width: 80%;
+    }
+    &__image{
+        margin-right: 15%;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+.team{
+    background: url(../img/T.png) no-repeat center 70px;
+    &__container{
+        padding-top: 140px;
+        padding-bottom: 120px;
+    }
+    &__content{
+        color: black;
+        text-align: center;
+    }
+    &__subtitle{
+        padding-top: 140px;
+        font-family: 'Gotham Book';
+        font-size: 30px;
+    }
+    &__row{
+        margin-top: 75px;
+        display: flex;
+    }
+    &__item{
+        flex: 0 1 25%;
+        position: relative;
+        margin-right: 25px;
+    }
+    &__item:last-child{
+        margin-right: 0;
+    }
+    &__item-photo{
+        max-width: 100%;
+        height: auto;
+    }
+    &__item-sign{
+        position: absolute;
+        width: 145px;
+        bottom: -20px;
+        left: 25%;
+        margin-left: -25px;
+        background-color: white;
+        text-align: center;
+        padding: 15px 15px 0 15px;
+    }
+    &__item-name{
+        font-family: 'Gotham';
+        font-weight: 500;
+        font-size: 20px;
+        color: $sea_blue;
+        text-transform: uppercase;
+    }
+    &__item-profession{
+        font-family: 'Gotham';
+        font-weight: 500;
+        font-size: 15px;
+        color: black;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-top: 5px;
+    }
+}
+.contacts{
+    padding-top: 220px;
+    padding-bottom: 100px;
+    background: url(../img/C.png) no-repeat center 140px,
+                url(../img/contact-background.jpg) no-repeat 100% 100%;
+    text-align: center;
+    &__form{
+        margin-top: 200px;
+        text-align: center;
+    }
+    &__form-top{
+        display: flex;
+        input{
+            width: 100%;
+            margin-right: 40px;
+            background-color: transparent;
+            padding: 20px;
+            border: 1px solid #fff;
+        }
+        input:last-child{
+            margin-right: 0;
+        }
+    }
+    textarea{
+        width: 100%;
+        margin-top: 40px;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: transparent;
+    }
+    &__btn{
+        margin-top: 50px;
+        padding: 20px 50px;
+        background-color: $sea_blue;
+        border: none;
+        font-family: 'Gotham';
+        font-weight: 500;
+        font-size: 24px;
+        color: #fff;
+    }
+}
+
+
+

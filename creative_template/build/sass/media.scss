@@ -1,0 +1,286 @@
+$sea_blue: #11749e;
+@media screen and (max-width: 1200px){
+    .promo{
+       &__content{
+           margin-top: 150px;
+       }
+    }
+    .title{
+        font-size: 30px;
+    }
+    .text{
+        line-height: 20px;
+    }
+    .about{
+        background: $sea_blue url(../img/W.png) no-repeat center 30px;
+        &__container{
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }
+        &__row{
+            padding-top: 100px;
+            flex-wrap: wrap;
+        }
+        &__col{
+            flex: 1 1 45%;   
+        }
+        &__col:nth-child(n+3){
+            margin-top: 60px;
+        }
+        &__col:last-child{
+            margin-right: 40px;
+        }
+        &__item-title{
+            padding-bottom: 15px;
+        }
+        &__item-text{
+            padding: 0 40px;
+        }
+        
+    }
+    .news{
+        &__left-text{
+            padding: 40px 55px 0 65px;
+        }
+        &__right-text{
+            padding: 40px 65px 0 40px;
+        }
+    }
+    .blog{
+        background: url(../img/B.png) no-repeat center 30px;
+        &__container{
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }
+        &__subtitle{
+            padding-top: 45px;
+            font-size: 26px;
+        }
+        &__row{
+            margin-top: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            flex: 0 1 45%;
+            margin-left: 0;
+        }
+        &__item:nth-child(n+3){
+            margin-top: 50px;
+        }
+        &__item-title{
+            padding-top: 20px;
+        }
+        &__item-text{
+            padding-top: 10px;
+        }
+    }
+    .quick{
+        padding-top: 55px;
+        padding-bottom: 75px;
+        &__item:first-child{
+            margin-right: 50px;
+        }
+    }
+    .key{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        &__content{
+            padding-top: 150px;
+        }
+        &__image{
+            margin-right: 5%;
+        }
+        &__content-text{
+            padding-top: 15px;
+        }
+    }
+    .team{
+        background: url(../img/T.png) no-repeat center 30px;
+        &__container{
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+        &__subtitle{
+            padding-top: 45px;
+            font-size: 26px;
+        }
+        &__row{
+            margin-top: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        &__item{
+            flex: 0 1 45%;
+            position: relative;
+        }
+        &__item:nth-child(n+3){
+            margin-top: 60px;
+        }
+        &__item-sign{
+            width: 145px;
+            left: 50%;
+            margin-left: -95px;
+        }
+    }
+    .contacts{
+        padding-top: 100px;
+        padding-bottom: 40px;
+        background: url(../img/C.png) no-repeat center 40px,
+                    url(../img/contact-background.jpg) no-repeat 100% 100%;
+        &__form{
+            margin-top: 100px;
+        }
+        textarea{
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__btn{
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+}
+@media screen and(max-width: 1028px){
+    .main-header__navigation{
+        display: none;
+    }
+    .menu-humb{
+        display: block;
+        position: fixed;
+        top: 38px;
+        right: 0;
+        margin-right: 20px;
+        i{
+            font-size: 40px;
+            color: black
+        }
+        &__navigation{
+            position: absolute;
+            right: 0;
+            background-color: rgba(0,0,0,.5);
+            display: none;
+        }
+        &__link{
+            padding: 30px 15px;
+            display: block;
+        }
+        &__link:hover{
+            background-color: rgba(17,116,158, .5);
+        }
+    }
+    .socials{
+        margin-right: 70px;
+    }
+}
+@media screen and(max-width: 940px){
+    .promo{
+        height: 700px;
+        &__title{
+            font-size: 120px;
+        }
+        &__subtitle{
+            letter-spacing: 10px;
+        }
+    }
+    .news{
+        &__left-text{
+            padding: 10px 20px 0 10px;
+        }
+        &__right-text{
+            padding: 10px 20px 0 10px;
+        }
+        img{
+            height: auto;
+        }
+        &__text:nth-child(n+2){
+            padding-top: 10px;
+        }
+    }
+    .about{
+        &__col{
+            flex: 1 1 40%;   
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .news{
+        img{
+            height: 100%;
+        }
+    }
+
+}
+@media screen and(max-width: 650px){
+    .promo{
+        &__title{
+            font-size: 65px;
+            letter-spacing: normal;
+        }
+    }
+    .about{
+        &__row{
+            flex-direction: column;
+        }
+        &__col{
+            margin-right: 0;
+            margin-top: 30px;
+        }
+        &__col:first-child{
+            margin-top: 0;
+        }
+        
+    }
+    .news{
+        &__container{
+            flex-direction: column;
+        }
+        &__promo-text{
+            max-width: 100%;
+        }
+        &__promo-image{
+            max-width: 100%;
+        }
+        &__right-text{
+            order: 0;
+        }
+    }
+    .key{
+        &__content{
+            padding-top: 50px;
+        }
+        &__image{
+            display: none;
+        }
+    }
+    .blog{
+        &__row{
+            flex-direction: column;
+        }
+        &__item:nth-child(n+1){
+            margin-top: 20px;
+        }
+    }
+    .quick{
+        &__container{
+            flex-direction: column;
+        }
+        &__item:nth-child(2){
+            margin-top: 30px;
+        }
+    }
+    .team{
+        &__row{
+            flex-direction: column;
+        }
+        &__item{
+            margin-top: 40px;
+        }
+        &__item:first-child{
+            margin-top: 0;
+        }
+    }
+}
