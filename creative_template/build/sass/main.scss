@@ -395,6 +395,15 @@ a{
         color: #fff;
     }
 }
-
-
-
+footer{
+    background-color: #222;
+    &__container{
+        height: 115px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright{
+        font-size: 13px;
+    }
+}
