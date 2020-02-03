@@ -126,3 +126,32 @@ a();
 a();
 a();
 
+/* 
+    СТЕК
+*/
+let openBracket = ['{' , '[' , '('],
+    closeBracket = ['}' , ']' , ')'],
+    stack = [],
+    openPos,
+    closePos,
+    str1 = '{some simbol,{ (sdfgsdf) [serfs]}',
+    str2 = str1.split('');
+
+for(let i = 0; i < str2.length; i++) {
+  openPos = openBracket.indexOf(str2[i]);
+  if(openPos !== -1) {
+    stack.push(openPos);
+  }
+  closePos = closeBracket.indexOf(str2[i]);
+  if(closePos !== -1){
+    openPos = stack.pop();
+    if(openPos !== closePos) {
+      console.log('error');
+    }
+  }
+}
+
+if(stack.length != 0){
+  console.log('error');
+}
+
