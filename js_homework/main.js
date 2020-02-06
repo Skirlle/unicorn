@@ -116,3 +116,4 @@ console.log(typeof(str));
 console.log(typeof(num));
 console.log(typeof(flag));
 console.log(typeof(txt));
+sdfasdfsdafsaf
