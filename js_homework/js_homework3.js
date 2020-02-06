@@ -154,4 +154,7 @@ for(let i = 0; i < str2.length; i++) {
 if(stack.length != 0){
   console.log('error');
 }
+if('ABrakadabra'){
+  console.log('AEEEEEE');
+}
 
