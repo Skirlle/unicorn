@@ -4,7 +4,7 @@ name = "John";
 admin = name;
 alert(admin);
 
-// 2 Задание
+// 2 Задание asasdasdasda
 if(a==10){
   alert("Верно");
 }else{
