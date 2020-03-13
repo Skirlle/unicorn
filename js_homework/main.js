@@ -4,7 +4,7 @@ name = "John";
 admin = name;
 alert(admin);
 
-// 2 Задание
+// 2 Задание asasdasdasda
 if(a==10){
   alert("Верно");
 }else{
@@ -116,3 +116,4 @@ console.log(typeof(str));
 console.log(typeof(num));
 console.log(typeof(flag));
 console.log(typeof(txt));
+sdfasdfsdafsaf
