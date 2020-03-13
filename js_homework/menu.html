@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Закрывающееся меню</title>
+        <style>
+            .close_menu{
+                display: none;
+            }
+            #btn_menu{
+                background-color: slategrey;
+                border-radius: 25%;
+                padding: 10px;
+                border: 1px solid slategrey;
+            }
+            #btn_menu:hover{
+                opacity: .8;
+                cursor: pointer;
+                box-shadow: 1px -1px 1px slategrey;
+            }
+            #menu li{
+                list-style-type: none;
+                width: 100px;
+                padding: 5px;
+                background-color: black;
+                opacity: .8;
+                color: whitesmoke;
+                text-align: center;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn_menu">Закрыть</button>
+        <ul id="menu" >
+            <li>1 element</li>
+            <li>2 element</li>
+            <li>3 element</li>
+            <li>4 element</li>
+            <li>5 element</li>
+        </ul>
+        <script>
+            let btn_menu = document.getElementById('btn_menu');
+            let menu = document.getElementById('menu');
+            btn_menu.addEventListener("click", () => {
+                menu.classList.toggle("close_menu");
+                if(menu.classList.contains("close_menu")){
+                    btn_menu.textContent = 'Открыть';
+                }else{
+                    btn_menu.textContent = 'Закрыть';
+                }
+            });
+        </script>
+    </body>
+    
+</html>
